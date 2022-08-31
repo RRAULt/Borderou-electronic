@@ -37,7 +37,7 @@ class ComandaInserareDate(Comanda):
 
 
 class ComandaListareInformatie(Comanda):
-    def __init__(self, sortare_dupa: str = "nume_complet") -> None:
+    def __init__(self, sortare_dupa: Union[str, int] = "nume_complet") -> None:
         self.sortare_dupa = sortare_dupa
 
     def execute(self):

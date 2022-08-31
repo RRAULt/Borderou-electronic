@@ -18,7 +18,7 @@ class AdministareBazaDeDate:
     def create_table(self, nume_tabel: str, coloane: Dict[str, str]) -> None:
         continut_coloane = []
         for nume_coloana, continut_coloana in coloane.items():
-            tipuri_de_date_in_coloane = f"{nume_coloana.upper()} {continut_coloana}"
+            tipuri_de_date_in_coloane = f"{nume_coloana.upper()} {continut_coloana.upper()}"
             continut_coloane.append(tipuri_de_date_in_coloane)
         interogare = (
             f"CREATE TABLE IF NOT EXISTS {nume_tabel} "

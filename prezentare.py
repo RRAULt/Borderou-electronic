@@ -45,11 +45,11 @@ def alege_optiune_disponibila(obtiuni: Dict[str, Obtiuni]) -> Obtiuni:
     return obtiuni[obtiune_aleasa.upper()]
 
 
-def obtine_input_utilizator(eticheta: str, obligativitate_completare: bool = True) -> Union[str, None]:
+def obtine_input_utilizator(eticheta:Union[str, int], obligativitate_completare: bool = True) -> Union[str, None]:
     informatie_inserata = input(f"{eticheta}: ") or None
     while obligativitate_completare and not informatie_inserata:
         informatie_inserata = input(f"{eticheta}: ") or None
-    return informatie_inserata
+    return informatie_inserata.title()
 
 
 def obtine_informatie_noua() -> dict:
