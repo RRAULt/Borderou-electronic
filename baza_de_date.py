@@ -4,6 +4,7 @@ from typing import Dict, List, Tuple, Union
 
 
 class AdministareBazaDeDate:
+    """Aceasta clasa se ocupa de crearea bazai de date si inserarea informatiei in aceasta"""
     
     def __init__(self, nume_baza_de_date: str) -> None:
         
